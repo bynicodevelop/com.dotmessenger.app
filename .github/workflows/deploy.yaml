@@ -39,6 +39,7 @@ jobs:
 
       - name: Move build to server
         run: |
+          mkdir -p server/build/web
           mv build/web/* server/build/web
 
       - name: Deploy web
