@@ -47,3 +47,4 @@ server/.firebaserc
 server/build
 
 .vscode
+coverage
