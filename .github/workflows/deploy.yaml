@@ -6,7 +6,11 @@ on:
       - main
 
 jobs:
+  testing-web:
+    uses: bynicodevelop/com.dotmessenger.app/.github/workflows/tests-flutter.yaml@main
+
   deploy:
+    needs: [testing-web]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

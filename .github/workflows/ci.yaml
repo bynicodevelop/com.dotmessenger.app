@@ -8,4 +8,4 @@ on:
 
 jobs:
   testing-web:
-    uses: bynicodevelop/com.dotmessenger.app/.github/workflows/tests-flutter.yaml@develop
+    uses: bynicodevelop/com.dotmessenger.app/.github/workflows/tests-flutter.yaml@main
