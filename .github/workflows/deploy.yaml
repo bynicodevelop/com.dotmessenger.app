@@ -1,9 +1,10 @@
 name: Deploy application
 
-on: 
+on:
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    tags:
+      - 'release/web/v*'
 
 jobs:
   testing-web:
